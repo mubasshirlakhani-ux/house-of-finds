@@ -667,8 +667,7 @@ function renderProducts(){
     grid.innerHTML = `
       <div class="empty" style="grid-column:1/-1">
         <h3>${products.length ? "No finds match that search." : "Your collection starts here."}</h3>
-        <p>${products.length ? "Try another search or category." : "Tap the ✦ button in the top-right to add your first product, photo and price."}</p>
-        ${!products.length ? `<button class="primary" onclick="openAdmin()">Open store editor →</button>` : ""}
+<p>${products.length ? "Try another search or category." : "No products available in this category yet."}</p>
       </div>`;
     return;
   }
